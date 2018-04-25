@@ -26,7 +26,7 @@ class App extends Component {
     console.log("Score", score);
 
     this.setState({ message: "You Guessed Correctly" });
-    
+
     if (score > topScore) {
       this.setState({ topScore: this.state.topScore + 1 });
       console.log("Top Score", this.state.topScore);
@@ -35,8 +35,8 @@ class App extends Component {
 
   removeFriend = id => {
     if (clickedCards.includes(id)) {
-    this.setState({ message: "You Guessed Incorrectly" });
-      
+      this.setState({ message: "You Guessed Incorrectly" });
+
       this.setState({ count: 0 });
       clickedCards.length = 0;
     } else {
@@ -45,6 +45,11 @@ class App extends Component {
       console.log("clicked cards", clickedCards);
       this.score();
     }
+    const sortedArray = this.state.friends;
+    sortedArray.sort(function(a, b) {
+      return 0.5 - Math.random();
+    });
+    this.setState({ friends: sortedArray });    
   };
 
   render() {
