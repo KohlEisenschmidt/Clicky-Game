@@ -1,28 +1,37 @@
 .card {
-    background: #fff;
-    border-radius: 2px;
-    height: 325px;
-    margin: 1rem;
+    /* background: #fff; */
+    background: transparent;
+    border-radius: 20px;
+    /* height: 325px; */
+    height: fit-content;
+    margin: 2rem;
     position: relative;
     width: 325px;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    box-shadow: 0 7px 16px #999, 0 7px 16px #999, 0 7px 16px #999, 0 -7px 16px #999;
     text-align: left;
+    content: auto;
+    border-image: auto
+    /* background:transparent; */
   }
   
   .card > .img-container {
-    height: 60%;
+    height: 100%;
     overflow: hidden;
     text-align: center;
-    background:#6CADDC;
+    /* background:#6CADDC; */
+    /* background:transparent; */
+    
   }
   .card > .img-container > img {
-    width: 60%
+    width: 100%;
+    border-radius: 20px;
   }
   
   .card > .content {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 15px;
+    height: 0%;
+    /* padding-left: 1rem; */
+    /* padding-right: 1rem; */
+    /* font-size: 15px; */
   }
   
   .card > .content > ul {

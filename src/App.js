@@ -54,11 +54,43 @@ class App extends Component {
 
   render() {
     return (
-      <Wrapper>
-        <h1>Score: ({this.state.count}) |</h1>
-        <h1>Top Score: ({this.state.topScore})</h1>
+
+      // <div class="jumbotron">
+      //   <h1 class="display-4">Hello, world!</h1>
+      //   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      //   <hr class="my-4">
+      //     <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      //     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      // </div>
+
+      <Wrapper class="wrapper">
+
+
+            {/* jumbotron template */}
+          {/* <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </div> */}
+
+        <Title id="title">
+          <div class="jumbotron">
+            <h1 class="display-4">Kohl's Clicky Game!</h1>
+            <p class="lead">{this.state.message}</p>
+            <hr class="my-4"></hr>
+            <h3 class="score">Score: {this.state.count} | Top Score: {this.state.topScore}</h3>
+          </div></Title>
+
+
+          {/* original tilte template */}
+        {/* <Title id="title">Kohl's Clicky Game!</Title>
+        <h1 class="score">Score: ({this.state.count}) |</h1>
+        <h1 class="score">Top Score: ({this.state.topScore})</h1>
         <h1> {this.state.message}</h1>
-        <Title>Kohl's Clicky Game!</Title>
+         */}
+
         {this.state.friends.map(friend => (
           <Card
             removeFriend={this.removeFriend}

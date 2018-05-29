@@ -5,3 +5,6 @@ clicked image. Your current score and total score is desplayed and the game is r
 Click this link to play the game
 
 https://heroku-is-still-garbage.herokuapp.com/
+
+
+yarn start to 
